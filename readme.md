@@ -36,6 +36,6 @@ So from a simple complex number array $Z_n$, we can construct 8 curves in space 
 | 010    | 2       | 0   | $-u_n+ iv_n$ | 1 | -1|  1 |
 | 011    | 3       | 0   | $-u_n- iv_n$ | 1 | -1| -1 |
 | 100    | 4       | 1   | $v_n +iu_n$  | 1 | $s_n$ | $\frac{1}{s_n}$ |
-| 101    | 5       | 1   | $v_n -iu_n$  | 1 | $s_n$ | -$\frac{1}{s_n}$ |
-| 110    | 6       | 1   | $-v_n +iu_n$ | 1 | -$s_n$| $\frac{1}{s_n}$ |
-| 111    | 7       | 1   | $-v_n -iu_n$ | 1 | -$s_n$| -$\frac{1}{s_n}$ |
+| 101    | 5       | 1   | $v_n -iu_n$  | 1 | $s_n$ | $-\frac{1}{s_n}$ |
+| 110    | 6       | 1   | $-v_n +iu_n$ | 1 | $-s_n$| $\frac{1}{s_n}$ |
+| 111    | 7       | 1   | $-v_n -iu_n$ | 1 | $-s_n$| $-\frac{1}{s_n}$ |
