@@ -4,6 +4,8 @@ Given N samples of a curve in space $\vec{X}$ , created by a single array of com
 
 $$n=[0,1,2,3,4,...,N]$$
 $$\omega=e^{\frac{2\pi i}{T_o}}$$
+
+
 $$\vec{X}_n=(u_n,v_n,w_n)$$
 
 $$Z_n=r_n\omega^n$$
