@@ -59,7 +59,7 @@ We can imagine each monad in the system as being created and transformed by ever
 
 # Binary counting and coordinate shifting of a curve in space 
 
-Given N samples of a curve in space we have $\vec{X}_n$ , created by a single array of complex number $Z_n$
+Given N samples of a curve in space $\vec{X}$ , created by a single array of complex number $Z_n$
 
 
 
@@ -109,19 +109,14 @@ $$\vec{X_n}=(k_u u_n,k_v v_n,k_w w_n)$$
 | Binary | Decimal | Curve| LSb Symmetry | $k_u$| $k_v$| $k_w$ |
 |--------|---------|-----|--------------|------|------|-------|
 | 100    | 4       | E   | $v_n +iu_n$  | $R_n$    |  $\frac{1}{R_n}$ |  1 |
-| 101    | 5       | F   | $v_n -iu_n$  | $R_n$    |  -$\frac{1}{R_n}$ |  1 |
-| 110    | 6       | G   | $-v_n +iu_n$ | -$R_n$    |  $\frac{1}{R_n}$ |  1 |
-| 111    | 7       | H   | $-v_n -iu_n$ | -$R_n$    |  -$\frac{1}{R_n}$ |  1 | 
+| 101    | 5       | F   | $v_n -iu_n$  | $R_n$    |  $-\frac{1}{R_n}$ |  1 |
+| 110    | 6       | G   | $-v_n +iu_n$ | $-R_n$    |  $\frac{1}{R_n}$ |  1 |
+| 111    | 7       | H   | $-v_n -iu_n$ | $-R_n$    |  $-\frac{1}{R_n}$ |  1 | 
 
 
 We could continue this table for $k_w=-1$, with the mirrored curves totaling  $2^4$ mirrored curves
 
 
-Using (x,y,z) as coordinates for simplicity we can see:
-
-$$x=u$$
-$$y=v$$
-$$z=w$$
 
 This change is just to indicate more clearly that up to 48 curves can be created mirroring the same $\vec{X}$, being the first 8 paths:
 
@@ -185,6 +180,8 @@ F_5
 
 
   
+
+
 
 
 
