@@ -59,7 +59,7 @@ We can imagine each monad in the system as being created and transformed by ever
 
 # Binary counting and coordinate shifting of a curve in space 
 
-Given N samples of a curve in space $\vec{X}$ , created by a single array of complex number $Z_n$
+Given N samples of a curve in space we have $\vec{X}_n$ , created by a single array of complex number $Z_n$
 
 
 
