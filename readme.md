@@ -105,9 +105,7 @@ $$\vec{X_n}=(k_u u_n,k_v v_n,k_w w_n)$$
 
 
 * yxz x4
-$R_n$
 
-$\frac{1}{R_n}$
 | Binary | Decimal | Curve| LSb Symmetry | $k_u$| $k_v$| $k_w$ |
 |--------|---------|-----|--------------|------|------|-------|
 | 100    | 4       | E   | $v_n +iu_n$  | $R_n$    |  $\frac{1}{R_n}$ |  1 |
