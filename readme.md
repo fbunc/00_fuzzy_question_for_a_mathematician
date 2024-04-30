@@ -64,12 +64,15 @@ Given N samples of a curve in space $\vec{X}$ , created by a single array of com
 
 
 $$n=[0,1,2,3,4,...,N]$$
+
 $$\omega=e^{\frac{2\pi i}{T_o}}$$
+
 $$\Omega_o=\frac{2\pi }{T_o}$$
 
 $$\vec{X}_n=(u_n,v_n,w_n)$$
 
 $$Z_n=r_n\omega^n$$
+
 $$\overline{Z_n}=r_n\omega^{-n}$$
 
 
@@ -84,6 +87,7 @@ $$w_n=\frac{log(|Z_n|)}{log(2)}$$
 $$R_n=\frac{v_n}{u_n}$$
 
 $$Z_n=u_n+iv_n$$
+
 $$\overline{Z_n}=u_n-iv_n$$
 
 
@@ -129,15 +133,21 @@ For example an array describing a set of curves we will call "Flower" uses 8 mir
 * xyz x4
 
 $$\vec{A_n}=\vec{X_n}=(u_n,v_n,w_n)$$
+
 $$\vec{B_n}=(u_n,-v_n,w_n)$$
+
 $$\vec{C_n}=(-u_n,v_n,w_n)$$
+
 $$\vec{D_n}=(-u_n,-v_n,w_n)$$
 
 * yxz x4
 
 $$\vec{E_n}=(v_n,u_n,w_n)$$
+
 $$\vec{F_n}=(v_n,-u_n,w_n)$$
+
 $$\vec{G_n}=(-v_n,u_n,w_n)$$
+
 $$\vec{H_n}=(-v_n,-u_n,w_n)$$
 
 
