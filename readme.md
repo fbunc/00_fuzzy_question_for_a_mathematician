@@ -63,7 +63,7 @@ Given N samples of a curve in space $\vec{X}$ , created by a single array of com
 
 
 
-$$n=[0,1,2,3,4,...,N]$$
+$$n=[0,1,2,3,4,...,N-1]$$
 
 $$\omega=e^{\frac{2\pi i}{T_o}}$$
 
