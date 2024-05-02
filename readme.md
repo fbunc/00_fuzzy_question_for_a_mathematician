@@ -1,68 +1,9 @@
-# The order matters : Math,Rhythm,Numbers,Monads,Particles,Universe
-
-
-I saw a post in X  that said:
-
-**"Numbers are particles"**
-
-I immediately thought I agree, without even  understanding clearly the meaning  in the real world of such a statement. Just thought in my infinite ignorance, I agree. That sounds nice. 
-
-That's what I've been thinking about when digressing about monads, trying to understand how just the process of evolving-time could be enough to create geometry and this way creating everything that is observable, expanding from an initial spatial and temporal coordinate and evolving according to  simple set of initial rules. 
-
-Equipped with  great ignorance and electrical-engineer level math I read about Wolfram's ruliad and, most of the time, I feel I understand what he is talking about.Something about "computational-irreducibility" feels really familiar, but I wouldn't be able to articulate a question for him in any meaningful academic context. 
-
-For me Math is the best infinite game available for humans, and I had the "irrational" impulse of start working on a model of a toy-universe where  math is creating everything using the energy and information associated to the beat of a "drum" or the tick of a "clock" at the center of coordinates, what in our game  would be "the center of the universe".
-
-For me, maybe it`s better to  think of a toy-model universe one can model using a set of initial conditions and simple set of rules that ends up describing a set of orbi-curves able to describe some fundamental geometric shapes flexible enough to create everything else, all monads information being  governed by local phenomena and a binary clock at the center of the universe. 
-
-I know this is insanely ambitious for my math level and IQ, and I know how far I am to even make this text understandable.
-
-But I have to insist:
-
-¿How does a mathematician think about designing/describing ad-hoc bridges between binary counting, geometric shapes, monads, vectors and complex numbers?
-
-
-# About the word Monad and the toy-universe game
-
-We can think of a monad as a virtual particle, that is able to "reflect" or "refract" some information that can be modeled as a color or an associated symbol.
-
-When I think of  monads I think about an apparently-random  set of observable-events that leave as a trace of their occurrence a set of "a-priori-indivisible" entities that have some information associated to them, and this information can be thought as a biased-reflection of their immediate context and the whole system state, but at the same time these entities have their own essence given  by the "universe-architect" at the "beginning", being able to position the monad in context with others, in a specific spatial and temporal coordinate, working as some kind of universe-building-celular-automata governed by the simplest central rules (Central binary clock or "Drum"). 
-
-But using Wikipedia we see some of the real meanings of the word:
-
-* In philosophy: An ultimate atom, or simple, unextended point; something ultimate and indivisible. 
-
-* In functional programming: A data type which represents a specific form of computation, along with the operations "return" and "bind". 
-
-* In category theory: A monoid object in the category of endo-functors of a fixed category. ¿¿¿What???
-
-* Co-monad as  a monad of the opposite category. This makes me think for example "monads" 1 with -1 as the main items in the category positive and negative integers, but also as a sense of direction in space like spin. 
-
-
-* For context we should mention Leibniz's "La Monadologie" in the sense that 
-what is being proposed  can be seen as a modification of occasionalism developed by latter-day Cartesians. 
-
-* Leibniz surmised that there are indefinitely many substances individually 'programmed' to act in a predetermined way, each substance being coordinated with all the others. 
-
-* This is the pre-established harmony which solved the mind-body problem, but at the cost of declaring any interaction between substances a mere appearance.
-
-
-
-# The clock at the center of the universe
-
-We can imagine a tick of a clock in the center of the toy-universe, that is there from the beginning. Each tick is transmitted to the whole universe through 
-a  wave that travels "instantaneously" everywhere bringing motion to everything that is being built since the "Big Drum Celular Automata Process" started. 
-
-
-## Why binary counting
-
-We can imagine each monad in the system as being created and transformed by every tick of the clock. This can be thought as some kind of universal digital circuit, where a main clock syncs everything with everything else. In this toy-universe-game the idea is to allow this central clock to provide a geometry where "reality" is displayed. 
-
-
-  
 # Binary counting and coordinate shifting of a curve in space 
 
-Given N "monads" describing  a curve in space $\vec{X}_n$ , created by a single array of complex numbers $Z_n$
+
+Given N "monads" describing  a curve in space $\vec{\mathbf{X_n}}$ , created by a single array of complex numbers $Z_n$
+
+$$\vec{\mathbf{X_n}}=(u_n,v_n,w_n)$$
 
 Considering:
 $$n  \in \space \mathbb{N}_0$$
@@ -89,18 +30,18 @@ $$|Z_n|=r_n$$
 
 ## Designing the modulus of $Z_n$ recursively
 
-For a given integer $M$, as the maximum amount of monads allowed per same radius wheel, and a real number $\Delta r_o$ defining in this case the discrete growth of r_n every time $n \equiv 0 \pmod{M}$. 
+For a given integer $M$, as the maximum amount of monads allowed per same-radius-circumference, and a real number $\Delta r_o$ defining in this case the discrete growth of r_n every time $n \equiv 0 \pmod{M}$. 
+
 
 
 $$
 r_k=
 \begin{cases}
-0 &  k \leq -1 \\
-r_{k-1}+\Delta r_o & \space  k \equiv 0 \pmod{M} \\
-r_{k-1} & \space  k \not\equiv 0 \pmod{M}
+0 &  k  < 0 \\
+r_{k-1}+\Delta r_o & \space k > 0 \text{ and } k \equiv 0 \pmod{M} \\
+r_{k-1} & \space   k > 0 \text{ and } k \not\equiv 0 \pmod{M}
 \end{cases}
 $$
-
 
 Considering:
 
@@ -121,8 +62,8 @@ $$n=[0,1,2,3,4,...,N-1]$$
 
 We define the main set of arrays describing a curve in space
 
+$$\vec{\mathbf{X_n}}=(u_n,v_n,w_n)$$
 
-$$\vec{X}_n=(u_n,v_n,w_n)$$
 
 $$\Omega_o=\frac{2\pi }{T_o}$$
 
@@ -152,7 +93,7 @@ Consider:
 
 $$R_n=\frac{v_n}{u_n}$$
 
-$$\vec{X_n}=(k_u u_n,k_v v_n,k_w w_n)$$
+$$\vec{\mathbf{V_n}}=(k_u u_n,k_v v_n,k_w w_n)$$
 
 * xyz x4 - Four basic symmetries for a complex number
 
@@ -252,156 +193,70 @@ $$\vec{O_n}=(-v_n,u_n,-w_n)$$
 
 $$\vec{P_n}=(-v_n,-u_n,-w_n)$$
 
+# The order matters : Math,Rhythm,Numbers,Monads,Particles,Universe
 
 
-### "Atomic" structure created by counting
-"Atom" structure uses 6*8=48 curves using all possible basic-combinations of shifted coordinates :
+I saw a post in X  that said:
 
-#### $F_0$
+**"Numbers are particles"**
 
-* xyz x4
+I immediately thought I agree, without even  understanding clearly the meaning  in the real world of such a statement. Just thought in my infinite ignorance, I agree. That sounds nice. 
 
-$$\vec{A_n}=(u_n,v_n,w_n)$$
+That's what I've been thinking about when digressing about monads, trying to understand how just the process of evolving-time could be enough to create geometry and this way creating everything that is observable, expanding from an initial spatial and temporal coordinate and evolving according to  simple set of initial rules. 
 
-$$\vec{B_n}=(u_n,-v_n,w_n)$$
+Equipped with  great ignorance and electrical-engineer level math I read about Wolfram's ruliad and, most of the time, I feel I understand what he is talking about.Something about "computational-irreducibility" feels really familiar, but I wouldn't be able to articulate a question for him in any meaningful academic context. 
 
-$$\vec{C_n}=(-u_n,v_n,w_n)$$
+For me Math is the best infinite game available for humans, and I had the "irrational" impulse of start working on a model of a toy-universe where  math is creating everything using the energy and information associated to the beat of a "drum" or the tick of a "clock" at the center of coordinates, what in our game  would be "the center of the universe".
 
-$$\vec{D_n}=(-u_n,-v_n,w_n)$$
+For me, maybe it`s better to  think of a toy-model universe one can model using a set of initial conditions and simple set of rules that ends up describing a set of orbi-curves able to describe some fundamental geometric shapes flexible enough to create everything else, all monads information being  governed by local phenomena and a binary clock at the center of the universe. 
 
-* yxz x4
+I know this is insanely ambitious for my math level and IQ, and I know how far I am to even make this text understandable.
 
-$$\vec{E_n}=(v_n,u_n,w_n)$$
+But I have to insist:
 
-$$\vec{F_n}=(v_n,-u_n,w_n)$$
-
-$$\vec{G_n}=(-v_n,u_n,w_n)$$
-
-$$\vec{H_n}=(-v_n,-u_n,w_n)$$
-
-#### $F_1$
-
-* xy(-z) x4
-$$\vec{I_n}=(u_n,v_n,w_n)$$
-
-$$\vec{J_n}=(u_n,-v_n,-w_n)$$
-
-$$\vec{K_n}=(-u_n,v_n,-w_n)$$
-
-$$\vec{L_n}=(-u_n,-v_n,-w_n)$$
+¿How does a mathematician think about designing/describing ad-hoc bridges between binary counting, geometric shapes, monads, vectors and complex numbers?
 
 
+# About the word Monad and the toy-universe game
 
-* yx(-z) x4
-$$\vec{M_n}=(v_n,u_n,-w_n)$$
+We can think of a monad as a virtual particle, that is able to "reflect" or "refract" some information that can be modeled as a color or an associated symbol.
 
-$$\vec{N_n}=(v_n,-u_n,-w_n)$$
+When I think of  monads I think about an apparently-random  set of observable-events that leave as a trace of their occurrence a set of "a-priori-indivisible" entities that have some information associated to them, and this information can be thought as a biased-reflection of their immediate context and the whole system state, but at the same time these entities have their own essence given  by the "universe-architect" at the "beginning", being able to position the monad in context with others, in a specific spatial and temporal coordinate, working as some kind of universe-building-celular-automata governed by the simplest central rules (Central binary clock or "Drum"). 
 
-$$\vec{O_n}=(-v_n,u_n,-w_n)$$
+But using Wikipedia we see some of the real meanings of the word:
 
-$$\vec{P_n}=(-v_n,-u_n,-w_n)$$
+* In philosophy: An ultimate atom, or simple, unextended point; something ultimate and indivisible. 
 
-#### $F_2$
-* zxy x4
+* In functional programming: A data type which represents a specific form of computation, along with the operations "return" and "bind". 
 
-$$\vec{Q_n}=(w_n,u_n,v_n)$$
+* In category theory: A monoid object in the category of endo-functors of a fixed category. ¿¿¿What???
 
-$$\vec{R_n}=(w_n,u_n,-v_n)$$
-
-$$\vec{S_n}=(w_n,-u_n,v_n)$$
-
-$$\vec{T_n}=(w_n,-u_n,-v_n)$$
+* Co-monad as  a monad of the opposite category. This makes me think for example "monads" 1 with -1 as the main items in the category positive and negative integers, but also as a sense of direction in space like spin. 
 
 
-* zyx x4
+* For context we should mention Leibniz's "La Monadologie" in the sense that 
+what is being proposed  can be seen as a modification of occasionalism developed by latter-day Cartesians. 
 
-$$\vec{U_n}=(w_n,v_n,u_n)$$
+* Leibniz surmised that there are indefinitely many substances individually 'programmed' to act in a predetermined way, each substance being coordinated with all the others. 
 
-$$\vec{V_n}=(w_n,v_n,-u_n)$$
+* This is the pre-established harmony which solved the mind-body problem, but at the cost of declaring any interaction between substances a mere appearance.
 
-$$\vec{W_n}=(w_n,-v_n,u_n)$$
 
-$$\vec{X_n}=(w_n,-v_n,-u_n)$$
+
+# The clock at the center of the universe
+
+We can imagine a tick of a clock in the center of the toy-universe, that is there from the beginning. Each tick is transmitted to the whole universe through 
+a  wave that travels "instantaneously" everywhere bringing motion to everything that is being built since the "Big Drum Celular Automata Process" started. 
+
+
+## Why binary counting
+
+We can imagine each monad in the system as being created and transformed by every tick of the clock. This can be thought as some kind of universal digital circuit, where a main clock syncs everything with everything else. In this toy-universe-game the idea is to allow this central clock to provide a geometry where "reality" is displayed. 
+
+
   
 
-#### $F_3$
 
-* (-z)xy x4
-
-$$\vec{\alpha_n}=(-w_n,u_n,v_n)$$
-
-$$\vec{\beta_n}=(-w_n,u_n,-v_n)$$
-
-$$\vec{\gamma_n}=(-w_n,-u_n,v_n)$$
-
-$$\vec{\delta_n}=(-w_n,-u_n,-v_n)$$
-
-
-
-* (-z)yx x4
-
-$$\vec{\epsilon_n}=(-w_n,v_n,u_n)$$
-
-$$\vec{\zeta_n}=(-w_n,v_n,-u_n)$$
-
-$$\vec{\eta_n}=(-w_n,-v_n,u_n)$$
-
-$$\vec{\theta_n}=(-w_n,-v_n,-u_n)$$
-
-#### $F_4$
-
-* xzy x4
-
-$$\vec{\iota_n}=(u_n,w_n,v_n)$$
-
-$$\vec{\kappa_n}=(u_n,w_n,-v_n)$$
-
-$$\vec{\lambda_n}=(-u_n,w_n,v_n)$$
-
-$$\vec{\mu_n}=(-u_n,w_n,-v_n)$$
-
-
-
-
-
-
-* yzx x4
-
-$$\vec{\nu_n}=(v_n,w_n,u_n)$$
-
-$$\vec{\xi_n}=(v_n,w_n,-u_n)$$
-
-$$\vec{O_n}=(-v_n,w_n,u_n)$$
-
-$$\vec{\pi_n}=(-v_n,w_n,-u_n)$$
-
-
-
-
-#### $F_5$
-* x(-z)y x4
-
-
-$$\vec{\rho_n}=(u_n,-w_n,v_n)$$
-
-$$\vec{\sigma_n}=(u_n,-w_n,-v_n)$$
-
-$$\vec{\tau_n}=(-u_n,-w_n,v_n)$$
-
-$$\vec{\upsilon_n}=(-u_n,-w_n,-v_n)$$
-
-
-
-
-* y(-z)x x4
-
-$$\vec{\phi_n}=(v_n,-w_n,u_n)$$
-
-$$\vec{\chi_n}=(v_n,-w_n,-u_n)$$
-
-$$\vec{\psi_n}=(-v_n,-w_n,u_n)$$
-
-$$\vec{\omega_n}=(-v_n,-w_n,-u_n)$$
 
 
 
