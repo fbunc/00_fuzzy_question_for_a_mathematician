@@ -187,7 +187,7 @@ def generate_primes(n):
     return primes
 
 
-def get_eigen_atlas_2D(input_symbol=np.arange(1000),sym_src='nmod',start_index=0,batch_size=1000,M=13,To=13,k_o=1,r_o=1,t_o=1,frac=0.5,delta_0=0.01,root_phase=1,root_norm=1,r_phase=1,r_norm=1,f_log_scat=0,f_psi=1):
+def get_eigen_atlas_2D(input_symbol=np.arange(100),sym_src='nmod',start_index=0,batch_size=100,M=13,To=13,k_o=1,r_o=1,t_o=1,frac=0.5,delta_0=0.01,root_phase=1,root_norm=1,r_phase=1,r_norm=1,f_log_scat=0,f_psi=1):
 #Variables preallocation
     symbol=np.zeros(batch_size,dtype=int)
     is_n_prime=np.zeros(batch_size,dtype=int)
