@@ -9,7 +9,7 @@ I immediately thought I agree, without even  understanding clearly the meaning  
 
 That's what I've been thinking about when digressing about monads, trying to understand how just the process of evolving-time could be enough to create geometry and this way creating everything that is observable, expanding from an initial spatial and temporal coordinate and evolving according to  simple set of initial rules. 
 
-Equipped with  great ignorance and electrical-engineer level math I read about Wolphram's ruliad and, most of the time, I feel I understand what he is talking about.Something about "computational-irreducibility" feels really familiar, but I wouldn't be able to articulate a question for him in any meaningful academic context. 
+Equipped with  great ignorance and electrical-engineer level math I read about Wolfram's ruliad and, most of the time, I feel I understand what he is talking about.Something about "computational-irreducibility" feels really familiar, but I wouldn't be able to articulate a question for him in any meaningful academic context. 
 
 For me Math is the best infinite game available for humans, and I had the "irrational" impulse of start working on a model of a toy-universe where  math is creating everything using the energy and information associated to the beat of a "drum" or the tick of a "clock" at the center of coordinates, what in our game  would be "the center of the universe".
 
