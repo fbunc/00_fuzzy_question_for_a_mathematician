@@ -1,5 +1,6 @@
 # The order matters : Math,Rhythm,Numbers,Monads,Particles,Universe
 
+
 I saw a post in X  that said:
 
 **"Numbers are particles"**
@@ -57,34 +58,85 @@ a  wave that travels "instantaneously" everywhere bringing motion to everything 
 
 We can imagine each monad in the system as being created and transformed by every tick of the clock. This can be thought as some kind of universal digital circuit, where a main clock syncs everything with everything else. In this toy-universe-game the idea is to allow this central clock to provide a geometry where "reality" is displayed. 
 
+
+  
 # Binary counting and coordinate shifting of a curve in space 
 
-Given N samples of a curve in space $\vec{X}$ , created by a single array of complex number $Z_n$
+Given N "monads" describing  a curve in space $\vec{X}_n$ , created by a single array of complex numbers $Z_n$
 
+Considering:
+$$n  \in \space \mathbb{N}_0$$
 
+$$T_o  \in \space \mathbb{R}$$
 
-$$n=[0,1,2,3,4,...,N-1]$$
+We have
 
 $$\omega=e^{\frac{2\pi i}{T_o}}$$
 
-$$\Omega_o=\frac{2\pi }{T_o}$$
 
-$$\vec{X}_n=(u_n,v_n,w_n)$$
+And 
 
 $$Z_n=r_n\omega^n$$
 
 $$\overline{Z_n}=r_n\omega^{-n}$$
 
 
-$$u_n=\frac{1}{2}(Z_n+\overline{Z_n})=r_n cos[\Omega_o n]$$
+The modulus of $Z_n$ can have many growth rules, for the initial set of examples we will use the following recursive rules to keep things simple:
 
+$$|Z_n|=r_n$$
+
+
+
+## Designing the modulus of $Z_n$ recursively
+
+For a given integer $M$, as the maximum amount of monads allowed per same radius wheel, and a real number $\Delta r_o$ defining in this case the discrete growth of r_n every time $n \equiv 0 \pmod{M}$. 
+
+
+$$
+r_k=
+\begin{cases}
+0 &  k \leq -1 \\
+r_{k-1}+\Delta r_o & \space  k \equiv 0 \pmod{M} \\
+r_{k-1} & \space  k \not\equiv 0 \pmod{M}
+\end{cases}
+$$
+
+
+Considering:
+
+$$  k  \in \mathbb{Z}$$ 
+
+$$ \Delta r_o \in \mathbb{R}$$
+
+
+
+
+So we can imagine a "discrete-time" main index for the model of creation process in the proposed toy-universe:
+
+
+
+$$n=[0,1,2,3,4,...,N-1]$$
+
+
+
+We define the main set of arrays describing a curve in space
+
+
+$$\vec{X}_n=(u_n,v_n,w_n)$$
+
+$$\Omega_o=\frac{2\pi }{T_o}$$
+
+And the spatial coordinates arrays for index $n$
+
+$$u_n=\frac{1}{2}(Z_n+\overline{Z_n})=r_n cos[\Omega_o n]$$
 
 $$v_n=\frac{1}{2i}(Z_n-\overline{Z_n})=r_n sin[\Omega_o n]$$
 
 $$w_n=\frac{log(|Z_n|)}{log(2)}$$
 
 
-$$R_n=\frac{v_n}{u_n}$$
+So we have an analogous way to see that:
+
 
 $$Z_n=u_n+iv_n$$
 
@@ -92,11 +144,17 @@ $$\overline{Z_n}=u_n-iv_n$$
 
 
 
-So from a simple complex number array $Z_n$, we can construct 8 curves in space , given by the $2^{3}$ symmetries in the positive $w$ direction
+
+So from a simple 2D numbers array $Z_n$, we can construct  8 curves in space , given by the $2^{3}$ symmetries in the positive $w$ direction
+
+
+Consider:
+
+$$R_n=\frac{v_n}{u_n}$$
 
 $$\vec{X_n}=(k_u u_n,k_v v_n,k_w w_n)$$
 
-* xyz x4
+* xyz x4 - Four basic symmetries for a complex number
 
 | Binary | Decimal | Curve| LSb Symmetry | $k_u$| $k_v$| $k_w$ |
 |--------|---------|-----|--------------|------|------|-------|
@@ -108,7 +166,7 @@ $$\vec{X_n}=(k_u u_n,k_v v_n,k_w w_n)$$
 
 
 
-* yxz x4
+* yxz x4 - Four basic symmetries for a coordinate shift on a complex number
 
 | Binary | Decimal | Curve| LSb Symmetry | $k_u$| $k_v$| $k_w$ |
 |--------|---------|-----|--------------|------|------|-------|
@@ -121,7 +179,6 @@ $$\vec{X_n}=(k_u u_n,k_v v_n,k_w w_n)$$
 We could continue this table for $k_w=-1$, with the mirrored curves totaling  $2^4$ mirrored curves
 
 
-
 This change is just to indicate more clearly that up to 48 curves can be created mirroring the same $\vec{X}$, being the first 8 paths:
 
 
@@ -132,7 +189,31 @@ For example an array describing a set of curves we will call "Flower" uses 8 mir
 
 * xyz x4
 
-$$\vec{A_n}=\vec{X_n}=(u_n,v_n,w_n)$$
+$$\vec{A_n}=(u_n,v_n,w_n)$$
+$$\vec{B_n}=(u_n,-v_n,w_n)$$
+$$\vec{C_n}=(-u_n,v_n,w_n)$$
+$$\vec{D_n}=(-u_n,-v_n,w_n)$$
+
+* yxz x4
+
+$$\vec{E_n}=(v_n,u_n,w_n)$$
+$$\vec{F_n}=(v_n,-u_n,w_n)$$
+$$\vec{G_n}=(-v_n,u_n,w_n)$$
+$$\vec{H_n}=(-v_n,-u_n,w_n)$$
+
+
+## Other arrays describing  mirrored set of curves
+
+Following the previous logic, we can imagine:
+
+### "Wormhole" structure created by counting 
+
+"Wormhole" using 16 Mirrored curves :
+
+
+* xyz x4
+
+$$\vec{A_n}=(u_n,v_n,w_n)$$
 
 $$\vec{B_n}=(u_n,-v_n,w_n)$$
 
@@ -151,47 +232,176 @@ $$\vec{G_n}=(-v_n,u_n,w_n)$$
 $$\vec{H_n}=(-v_n,-u_n,w_n)$$
 
 
-## Other arrays describing  mirrored set of curves
-
-Following the previous logic, we can imagine:
-
-"Wormhole Flower" using 16 Mirrored curves :
-* xyz x4
-* yxz x4
 * xy(-z) x4
+$$\vec{I_n}=(u_n,v_n,-w_n)$$
+
+$$\vec{J_n}=(u_n,-v_n,-w_n)$$
+
+$$\vec{K_n}=(-u_n,v_n,-w_n)$$
+
+$$\vec{L_n}=(-u_n,-v_n,-w_n)$$
+
+
+
 * yx(-z) x4
+$$\vec{M_n}=(v_n,u_n,-w_n)$$
 
-"Atom" structure uses 6*8=48 curves using all possible basic-combinations:
+$$\vec{N_n}=(v_n,-u_n,-w_n)$$
 
-F_0
+$$\vec{O_n}=(-v_n,u_n,-w_n)$$
+
+$$\vec{P_n}=(-v_n,-u_n,-w_n)$$
+
+
+
+### "Atomic" structure created by counting
+"Atom" structure uses 6*8=48 curves using all possible basic-combinations of shifted coordinates :
+
+#### $F_0$
+
 * xyz x4
+
+$$\vec{A_n}=(u_n,v_n,w_n)$$
+
+$$\vec{B_n}=(u_n,-v_n,w_n)$$
+
+$$\vec{C_n}=(-u_n,v_n,w_n)$$
+
+$$\vec{D_n}=(-u_n,-v_n,w_n)$$
+
 * yxz x4
 
-F_1
-* xy(-z) x4
-* yx(-z) x4
+$$\vec{E_n}=(v_n,u_n,w_n)$$
 
-F_2
+$$\vec{F_n}=(v_n,-u_n,w_n)$$
+
+$$\vec{G_n}=(-v_n,u_n,w_n)$$
+
+$$\vec{H_n}=(-v_n,-u_n,w_n)$$
+
+#### $F_1$
+
+* xy(-z) x4
+$$\vec{I_n}=(u_n,v_n,w_n)$$
+
+$$\vec{J_n}=(u_n,-v_n,-w_n)$$
+
+$$\vec{K_n}=(-u_n,v_n,-w_n)$$
+
+$$\vec{L_n}=(-u_n,-v_n,-w_n)$$
+
+
+
+* yx(-z) x4
+$$\vec{M_n}=(v_n,u_n,-w_n)$$
+
+$$\vec{N_n}=(v_n,-u_n,-w_n)$$
+
+$$\vec{O_n}=(-v_n,u_n,-w_n)$$
+
+$$\vec{P_n}=(-v_n,-u_n,-w_n)$$
+
+#### $F_2$
 * zxy x4
+
+$$\vec{Q_n}=(w_n,u_n,v_n)$$
+
+$$\vec{R_n}=(w_n,u_n,-v_n)$$
+
+$$\vec{S_n}=(w_n,-u_n,v_n)$$
+
+$$\vec{T_n}=(w_n,-u_n,-v_n)$$
+
+
 * zyx x4
 
-F_3
-* (-z)xy x4
-* (-z)yx x4
+$$\vec{U_n}=(w_n,v_n,u_n)$$
 
-F_4
-* xzy x4
-* yzx x4
+$$\vec{V_n}=(w_n,v_n,-u_n)$$
 
-F_5
-* x(-z)y x4
-* y(-z)x x4
+$$\vec{W_n}=(w_n,-v_n,u_n)$$
 
-
-
+$$\vec{X_n}=(w_n,-v_n,-u_n)$$
   
 
+#### $F_3$
 
+* (-z)xy x4
+
+$$\vec{\alpha_n}=(-w_n,u_n,v_n)$$
+
+$$\vec{\beta_n}=(-w_n,u_n,-v_n)$$
+
+$$\vec{\gamma_n}=(-w_n,-u_n,v_n)$$
+
+$$\vec{\delta_n}=(-w_n,-u_n,-v_n)$$
+
+
+
+* (-z)yx x4
+
+$$\vec{\epsilon_n}=(-w_n,v_n,u_n)$$
+
+$$\vec{\zeta_n}=(-w_n,v_n,-u_n)$$
+
+$$\vec{\eta_n}=(-w_n,-v_n,u_n)$$
+
+$$\vec{\theta_n}=(-w_n,-v_n,-u_n)$$
+
+#### $F_4$
+
+* xzy x4
+
+$$\vec{\iota_n}=(u_n,w_n,v_n)$$
+
+$$\vec{\kappa_n}=(u_n,w_n,-v_n)$$
+
+$$\vec{\lambda_n}=(-u_n,w_n,v_n)$$
+
+$$\vec{\mu_n}=(-u_n,w_n,-v_n)$$
+
+
+
+
+
+
+* yzx x4
+
+$$\vec{\nu_n}=(v_n,w_n,u_n)$$
+
+$$\vec{\xi_n}=(v_n,w_n,-u_n)$$
+
+$$\vec{O_n}=(-v_n,w_n,u_n)$$
+
+$$\vec{\pi_n}=(-v_n,w_n,-u_n)$$
+
+
+
+
+#### $F_5$
+* x(-z)y x4
+
+
+$$\vec{\rho_n}=(u_n,-w_n,v_n)$$
+
+$$\vec{\sigma_n}=(u_n,-w_n,-v_n)$$
+
+$$\vec{\tau_n}=(-u_n,-w_n,v_n)$$
+
+$$\vec{\upsilon_n}=(-u_n,-w_n,-v_n)$$
+
+
+
+
+* y(-z)x x4
+
+$$\vec{\phi_n}=(v_n,-w_n,u_n)$$
+
+$$\vec{\chi_n}=(v_n,-w_n,-u_n)$$
+
+$$\vec{\psi_n}=(-v_n,-w_n,u_n)$$
+
+$$\vec{\omega_n}=(-v_n,-w_n,-u_n)$$
 
 
 
