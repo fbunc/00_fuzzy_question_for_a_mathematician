@@ -73,16 +73,31 @@ def plot_curve(u, v, w, line=False, scatt=True, figsize=(16, 16), M_color=12, ax
     
 
 # Example usage:
-N = 10000*3
-M = 13
-M_color=13
-Delta_r_o = 1/M
-phi=0.5*(1+np.sqrt(5))
-T_o=phi#1.005454588412977
+
+
+N = 5000
+T_o=3
+M = 1
+M_c=T_o
+Delta_r_o = 0.001
 
 
 Z = generate_curve(N, M, Delta_r_o, T_o)
 u, v, w = cartesian_coordinates(Z)
-plot_curve(u, v, w, line=False, scatt=True,axis_on=False,M_color=M_color,cmap='coolwarm')
+
+
+plot_curve(u, v, w,axis_on=True,line=True,M_color=M_c,cmap='coolwarm')
+
+
+
+# N = 10000*3
+# M = 13
+# M_color=13
+# Delta_r_o = 1/M
+# phi=0.5*(1+np.sqrt(5))
+# T_o=phi#1.005454588412977
+# Z = generate_curve(N, M, Delta_r_o, T_o)
+# u, v, w = cartesian_coordinates(Z)
+# plot_curve(u, v, w, line=False, scatt=True,axis_on=False,M_color=M_color,cmap='coolwarm')
 
 

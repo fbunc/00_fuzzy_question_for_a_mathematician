@@ -120,7 +120,7 @@ $$\vec{\mathbf{V_n}}=(k_u u_n,k_v v_n,k_w w_n)$$
 We could continue this table for $k_w=-1$, with the mirrored curves totaling  $2^4$ mirrored curves
 
 
-This change is just to indicate more clearly that up to 48 curves can be created mirroring the same $\vec{X}$, being the first 8 paths:
+This change is just to indicate more clearly that up to 48 curves can be created mirroring the same $\vec{\mathbf{X}}$, thus creating a mesh based on the curve's shape :
 
 
 
