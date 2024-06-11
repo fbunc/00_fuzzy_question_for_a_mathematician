@@ -44,7 +44,7 @@ def plot_curve(u, v, w, line=False, scatt=True, figsize=(16, 16), M_color=12, ax
     colors = np.arange(len(u)) % M_color / M_color  # Generate colors based on index mod M_color
     
     if line:
-        ax.plot(u, v, w, color='blue')  # You can customize the line color here
+        ax.plot(u, v, w, color='gray')  # You can customize the line color here
 
     if scatt:
         ax.scatter(u, v, w, c=colors, cmap=cmap)  # Use colors for scatter plot
@@ -74,18 +74,18 @@ def plot_curve(u, v, w, line=False, scatt=True, figsize=(16, 16), M_color=12, ax
 
 
 
-# Example usage:
-N = 10000*10
-M = 1
-M_color=13
-Delta_r_o = 1/M
-phi=0.5*(1+np.sqrt(5))
-T_o=phi
+# # Example usage:
+# N = 10000*10
+# M = 1
+# M_color=13
+# Delta_r_o = 1/M
+# phi=0.5*(1+np.sqrt(5))
+# T_o=phi
 
 
-Z = generate_curve(N, M, Delta_r_o, T_o)
-u, v, w = cartesian_coordinates(Z)
-plot_curve(u, v, w, line=True, scatt=True,axis_on=True,M_color=M_color,cmap='coolwarm')
+# Z = generate_curve(N, M, Delta_r_o, T_o)
+# u, v, w = cartesian_coordinates(Z)
+# plot_curve(u, v, w, line=True, scatt=True,axis_on=True,M_color=M_color,cmap='coolwarm')
 
 
 # N = 10000*3
@@ -97,5 +97,16 @@ plot_curve(u, v, w, line=True, scatt=True,axis_on=True,M_color=M_color,cmap='coo
 # Z = generate_curve(N, M, Delta_r_o, T_o)
 # u, v, w = cartesian_coordinates(Z)
 # plot_curve(u, v, w, line=False, scatt=True,axis_on=False,M_color=M_color,cmap='coolwarm')
+
+
+N = 10**4
+M = 1
+M_color=13
+Delta_r_o = 1/M
+phi=0.5*(1+np.sqrt(5))
+T_o=2+phi-1
+Z = generate_curve(N, M, Delta_r_o, T_o)
+u, v, w = cartesian_coordinates(Z)
+plot_curve(u, v, w, line=True, scatt=True,axis_on=True,M_color=M_color,cmap='hsv')
 
 
